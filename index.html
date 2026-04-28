@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unfiltered — Real talk on finance, fitness, engineering &amp; life</title>
+  <meta name="description" content="Unfiltered is a personal blog covering investing, fitness, engineering, finance, and life — written honestly, without the fluff.">
+  <meta property="og:title" content="Unfiltered">
+  <meta property="og:description" content="Real talk on finance, fitness, engineering and life.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://yourusername.github.io/">
+
+  <!-- Google Analytics: replace G-XXXXXXXXXX with your actual ID after setup -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">Un<span>filtered</span></a>
+      <p class="navbar-tagline">No spin. No fluff. Just real.</p>
+      <div class="navbar-links">
+        <a href="index.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Welcome to Unfiltered</p>
+      <h1 class="hero-title">Thoughts worth <em>reading.</em><br>No filter attached.</h1>
+      <p class="hero-desc">Investing, fitness, engineering, and life — written by someone figuring it all out, honestly.</p>
+    </div>
+  </section>
+
+  <div class="filter-section">
+    <div class="filter-bar">
+      <span class="filter-label">Topics</span>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Finance">Finance</button>
+      <button class="filter-btn" data-filter="Fitness & Health">Fitness &amp; Health</button>
+      <button class="filter-btn" data-filter="Engineering">Engineering</button>
+      <button class="filter-btn" data-filter="Life">Life</button>
+      <button class="filter-btn" data-filter="Investing">Investing</button>
+      <button class="filter-btn" data-filter="Politics">Politics</button>
+    </div>
+  </div>
+
+  <section class="posts-section">
+    <div class="posts-grid" id="posts-grid"></div>
+    <p class="no-results" id="no-results">No posts in this category yet — check back soon.</p>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Un<span>filtered</span></div>
+      <p class="footer-tagline">No spin. No fluff. Just real.</p>
+      <div class="footer-links">
+        <a href="index.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Unfiltered. All rights reserved. Unauthorised reproduction of content is prohibited.</p>
+    </div>
+  </footer>
+
+  <script src="js/posts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
