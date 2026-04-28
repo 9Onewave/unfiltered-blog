@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://9onewave.github.io/sitemap.xml

@@ -3,9 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Unfiltered</title>
-  <meta name="description" content="Who's behind Unfiltered? Read about the person writing these posts and why this blog exists.">
-  <link rel="stylesheet" href="css/style.css">
+
+  <title>About 9onewave — Unfiltered Blog</title>
+  <meta name="description" content="Who's behind Unfiltered? Read about 9onewave — the person writing these posts and why this blog exists.">
+  <meta name="author" content="9onewave">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://9onewave.github.io/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About 9onewave — Unfiltered Blog">
+  <meta property="og:description" content="Who's behind Unfiltered? Read about 9onewave and why this blog exists.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://9onewave.github.io/about.html">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "9onewave",
+    "url": "https://9onewave.github.io/",
+    "sameAs": ["https://github.com/9onewave"]
+  }
+  </script>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -15,12 +35,16 @@
     gtag('js', new Date());
     gtag('config', 'G-XXXXXXXXXX');
   </script>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav class="navbar">
+  <div id="reading-progress" aria-hidden="true"></div>
+
+  <nav class="navbar" aria-label="Main navigation">
     <div class="navbar-inner">
-      <a href="index.html" class="navbar-logo">Un<span>filtered</span></a>
+      <a href="index.html" class="navbar-logo" aria-label="Unfiltered — home">Un<span>filtered</span></a>
       <p class="navbar-tagline">No spin. No fluff. Just real.</p>
       <div class="navbar-links">
         <a href="index.html">Blog</a>
@@ -30,51 +54,49 @@
     </div>
   </nav>
 
-  <div class="about-hero">
-    <p class="about-eyebrow">The person behind the posts</p>
-    <h1 class="about-title">Honest writing from someone still figuring it out</h1>
-    <div class="about-divider"></div>
-    <div class="about-body">
-      <p>
-        I'm John — 18 years old, based in Livingston, Scotland. I'm finishing an HNC in Engineering Systems and I hold a Mitsubishi Electric Ecodan heat pump certification. I'm figuring out the same things most people my age are — money, career, fitness, and what it all means.
-      </p>
-      <p>
-        Unfiltered started because I got tired of reading content that was either too polished to be real, or too vague to be useful. I wanted a place to write the stuff I actually think — about investing when you're young and skint, about getting fit without losing your head, about working in engineering when the world is shifting fast.
-      </p>
-      <p>
-        Nothing here is sponsored. Nothing is filtered through a PR team. It's just me, writing what I know and what I'm learning. Some of it will age well. Some of it probably won't. That's kind of the point.
-      </p>
+  <main>
+    <div class="about-hero">
+      <p class="about-eyebrow">The person behind the posts</p>
+      <h1 class="about-title">A place for ideas, projects, and honest thoughts</h1>
+      <div class="about-divider"></div>
+      <div class="about-body">
+        <p>Welcome to Unfiltered Blog — a space where ideas are shared without unnecessary fluff.</p>
+        <p>This blog covers topics that matter to me: investing, technology, self-improvement, business ideas, digital projects, and random thoughts worth sharing. The goal is simple — write honest, straightforward content that helps people learn something useful or see things from a different perspective.</p>
+        <p>Whether it's breaking down financial concepts, exploring tech trends, or documenting projects I'm building, this blog is a place for curiosity and growth.</p>
+        <p>No fake guru advice. No overcomplicated jargon. Just real thoughts, practical insights, and unfiltered perspectives.</p>
+        <p>Thanks for stopping by.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="about-values">
-    <div class="value-card">
-      <div class="value-number">01</div>
-      <div class="value-title">Honest over polished</div>
-      <div class="value-desc">If I don't know something, I'll say so. If I was wrong, I'll say that too.</div>
+    <div class="about-values" aria-label="Blog values">
+      <div class="value-card">
+        <div class="value-number">01</div>
+        <div class="value-title">Honest over polished</div>
+        <div class="value-desc">If I don't know something, I'll say so. If I was wrong, I'll say that too.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-number">02</div>
+        <div class="value-title">Specific over vague</div>
+        <div class="value-desc">No "just invest early" without telling you what that actually looks like with real numbers.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-number">03</div>
+        <div class="value-title">Consistent over viral</div>
+        <div class="value-desc">I write when I have something worth saying. Not to chase an algorithm.</div>
+      </div>
     </div>
-    <div class="value-card">
-      <div class="value-number">02</div>
-      <div class="value-title">Specific over vague</div>
-      <div class="value-desc">No "just invest early" without telling you what that actually looks like with real numbers.</div>
-    </div>
-    <div class="value-card">
-      <div class="value-number">03</div>
-      <div class="value-title">Consistent over viral</div>
-      <div class="value-desc">I write when I have something worth saying. Not to chase an algorithm.</div>
-    </div>
-  </div>
+  </main>
 
   <footer>
     <div class="footer-inner">
       <div class="footer-logo">Un<span>filtered</span></div>
       <p class="footer-tagline">No spin. No fluff. Just real.</p>
-      <div class="footer-links">
+      <nav class="footer-links" aria-label="Footer navigation">
         <a href="index.html">Blog</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-      </div>
-      <p class="footer-copy">&copy; 2026 Unfiltered. All rights reserved.</p>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Unfiltered by 9onewave. All rights reserved.</p>
     </div>
   </footer>
 
